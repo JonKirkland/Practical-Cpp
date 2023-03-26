@@ -1,0 +1,55 @@
+THE FOR STATEMENT
+    allows to execute a block a specified number of times
+    general form:
+        for(initial-statement;condition;iteration-statement)
+            body-statement;
+
+    This is equivalent to:
+        initial-statement;
+        while(condition)
+        {
+            body-statement;
+            iteration-statement;
+        }
+
+THE SWITCH STATEMENT:
+    switch statement is similar to a chain of if-else statements
+    general form:
+        switch(expressions)
+        {
+            case constant1;
+                statement
+                .........
+                break;
+            case constant2;
+                statement
+                ....
+                //fall through
+            default:
+                statement
+                .....
+                break;
+            case constant3:
+                statement
+                ....
+                break;
+        }
+    the switch statement evaluates the value of an expression and branches to one of the case statements
+    Duplicate statements are not allowed, so only one case will be selected.
+    The expression must evaluate to an integer, character or enumeration.
+
+    case statements can be in any order and must be constants. The default statement can be put anywhere in the switch
+
+    When C++ sees a switch statement, it evaluates the matching statement and looks for a matching case statement.
+
+    If none is found, the default statement is used. If no default is found, the statement does nothing.
+
+    a break statement inside a switch tells the compuler to continue execution after the switch, if the break
+    is not present execution continues with the next statement.
+
+    Switch,break and continue
+    break statement has 2 uses: inside a switch it causes the program to exit the switch statement
+    inside a loop it causes the program to exit the loop
+
+    the continue statement is only valid inside a loop and causes the loop to go back to the beginning
+    
