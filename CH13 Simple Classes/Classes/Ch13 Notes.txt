@@ -1,0 +1,22 @@
+STACKS:
+	A stack is an algorithm for storing data
+	Data can be added / removed using the push and pop operations
+	Data is stored in a Last in First out order
+	Can think of it as adding / removing pieces of paper to a stack of papers
+
+	Designing a Stack:
+		Fortunately other people have designed stacks, C++ comes with a stack class as part of the Standard Template Library.
+		We start a stack design by designing the data structure. This structure will need a place to put the data, and a count
+		of the number of items currently pushed on the stack
+
+		eg:
+			const int STACK_SIZE = 100;
+			//the stack:
+			struct stack{
+				int count;
+				int data[STACK_SIZE];
+			};
+
+		Next, the routinmes to handle the push and pop operations need to be created.
+		The push function stores the item on the stack and then increases the data count.
+		(MOVED TO THE EXAMPLE)
