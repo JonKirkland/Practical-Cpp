@@ -19,4 +19,18 @@ STACKS:
 
 		Next, the routinmes to handle the push and pop operations need to be created.
 		The push function stores the item on the stack and then increases the data count.
-		(MOVED TO THE EXAMPLE)
+		(MOVED TO THE EXAMPLE 13-1)
+
+		IMPROVED STACK:
+		The stack in 13-1 works but has a few drawbacks, first is that the data and the functions are defined seperately forcing
+		a struct stack variable to be passed into each procedure.
+		There is also a problem with data protection. The fields data and count are acccessible to anyone, and the design states that only
+		the stack functions should have access to them. Nothing is stopping rogue code from modifying them.
+
+		A C++ struct is a mixed collection of data. The C++ class not only holds data like a structure, but also adds a set of functions
+		for manipulating the data and access protection.
+		For turning the struct stack into a class, see example 13-2.
+		In the private section of the stack class, the items are NOT FIELDS but instead called member "variables".
+		The keyword private indicates access privilege, private member variables cannot be accessed out of the class.
+		Protected members can be accessed only via derived classes, and public can be accessed by anything/anyone.
+
